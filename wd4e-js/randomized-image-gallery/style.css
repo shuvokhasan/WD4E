@@ -1,0 +1,26 @@
+.flex{
+    display: flex;
+    justify-content: space-around;
+}
+
+img{
+    width: 244px;
+    opacity: .7;
+    transition: opacity .6s;
+}
+
+img:hover{
+    opacity: 1;
+}
+
+img:focus{
+    opacity: 1;
+}
+
+p{
+    color: #ffd1d1;
+    width: 30%;
+    margin: 5rem auto;
+    font-size: 175%;
+    text-align: center;
+}
