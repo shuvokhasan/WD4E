@@ -1,2 +1,3 @@
 # WD4E
-Coursera "Web Development For Everybody" assignment projects
+Web Development For Everybody
+Assignment projects & quizes are updated here.
