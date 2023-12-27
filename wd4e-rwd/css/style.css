@@ -1,0 +1,118 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 100%;
+}
+
+header{
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 48px 0;
+}
+
+h1{
+    width: 95%;
+    font-size: 300%;
+    padding: 0 1rem;
+}
+
+p{
+    padding: 1rem;
+    margin: 0 auto;
+    font-size: 110%;
+    line-height: 1.6rem;
+}
+
+figure{
+    text-align: center;
+    font-size: 110%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 24px 24px;
+    background: #333;
+    border-radius: 16px;
+}
+
+figcaption{
+    padding-top: 24px;
+    color: #fff;
+}
+
+img{
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+.grid{
+    display: grid;
+    justify-content: center;
+    grid-gap: 10px;
+}
+
+footer a{
+    display: inline-block;
+    padding: 8px 16px;
+    margin: 1rem;
+    background-color: #333;
+    border-radius: 1000px;
+    color: #fff;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 772px){
+    .grid{
+        grid-template-columns: 49% 49%;
+        align-items: center;
+    }
+
+    img{
+        border-radius: 100px;
+    }
+}
+
+@media screen and (min-width: 992px){
+    h1{
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    p{
+        width: 70%;
+    }
+
+    .grid figure:nth-child(3n) {
+        grid-column: span 2;
+    }
+
+    img{
+        border-radius: 0;
+    }
+
+    figure{
+        border-radius: 0;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    body {
+      scroll-behavior: auto;
+    }
+  }
+
+  
+/* Media query for dark color scheme */
+@media (prefers-color-scheme: dark) {
+    figure {
+        background-color: #1a1a1a; /* Dark background color */
+        color: #ffffcc; /* Light font color (yellow-ish) */
+        border: 2px solid #000000; /* Dark border color */
+    }
+}
+  
